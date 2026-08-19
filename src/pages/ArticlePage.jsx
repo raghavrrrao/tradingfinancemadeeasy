@@ -141,7 +141,7 @@ export default function ArticlePage() {
 
       {/* Right sidebar: TOC */}
       <aside className="hidden xl:block print:hidden">
-        <div className="sticky top-24">
+        <div className="sticky top-24 max-h-[calc(100vh-7rem)] overflow-y-auto pr-2">
           <TableOfContents sections={article.sections} />
         </div>
       </aside>

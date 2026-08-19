@@ -2188,6 +2188,844 @@ export const articles = [
 
     references: [],
   },
+  {
+    slug: "ucp-600-article-13-bank-to-bank-reimbursement",
+    categorySlug: "documentary-credits",
+    title: "Commentary on the Uniform Rules for Bank-to-Bank Reimbursements under Documentary Credits (URR 725)",
+    author: "Anup Parikh",
+    updated: "2026-08-19",
+    readingTime: 49,
+    summary: "Reimbursement, in context of documentary credits, refers to a claim by a financial institution, known as claiming bank, to recover funds from another financial institution known as reimbursing bank.",
+    sections: [
+      {
+        heading: "(Part 1 / 30) Understanding the term “Reimbursement” in context to Bank-to-Bank Reimbursements and Application of rules laid down in URR 725",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Reimbursement, in context of documentary credits, refers to a claim by a financial institution, known as claiming bank, to recover funds from another financial institution known as reimbursing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Reimbursing bank is defined under Article 2(b) of URR 725. Reimbursing bank in simple terms is the bank that is authorized by the issuing bank to reimburse the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Reimbursing bank acts as a settlement counterparty to the claiming bank, acting on the authorization / instructions received from the issuing bank, thereby establishing itself as an intermediary when a direct banking relationship cannot be established.",
+          },
+          {
+            type: "paragraph",
+            text: "The need for such reimbursing bank arises in cases where claiming bank and the issuing bank cannot settle funds directly because of operational reasons such as liquidity, currency or settlement arrangements.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 2  / 30) Key Parties: Issuing Bank, Reimbursing Bank, and Claiming Bank",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 2(a) of URR 725 defines Issuing Bank. Issuing Bank is defined as the bank that has issued the credit under SWIFT MT 700 and reimbursement authorization under that credit through SWIFT MT 740. Operationally, the issuing bank is the sender of SWIFT MT 740.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 20 of SWIFT MT 700 and SWIFT MT 740 identifies the credit under documentary credit and identifies the underlying credit to which the reimbursement authorization relates.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 25 of SWIFT MT 740 identifies the account which is to be debited for reimbursements.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 2(b) of URR 725 mandates that the reimbursing bank will act pursuant to a reimbursement authorization issued by the issuing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 3  / 30) From Reimbursement Authorization to Reimbursement Undertaking: Two Distinct Commitments.",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Reimbursement authorization is defined in Article 2(c) of URR 725. Article 2(c) of URR 725 explains reimbursement authorization as instructions or authorization issued by issuing bank to a reimbursing bank. Further Article 9(b) of URR 725 states that the reimbursement authorization as request or authorizing issued by the issuing bank to the reimbursing bank is irrevocable by default. The word irrevocable refers to the responsibility of the issuing bank to honour an undertaking and be bound by its terms as long as the authorization remains in force.",
+          },
+          {
+            type: "paragraph",
+            text: "It is important to note that irrevocability does not imply issuing bank’s incapability to amend or cancel.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 2(g) of URR 725 states that a reimbursement undertaking consists of 3 distinct parts. The first part states that reimbursement undertaking is separate implying independence. The concept of independence is emphasised through Article 3 which draws distinction between reimbursement authorizations versus credit. The second part states that reimbursement undertaking is irrevocable of the reimbursing bank to the claiming bank. This term irrevocable nature of the reimbursement undertaking suggests that the claiming bank’s approval is mandatory in case of amendment or cancellation of the reimbursement undertaking by the reimbursing bank. The third and final part of Article 2(g) of URR 725 states that the reimbursing bank is bound to honour claiming bank’s reimbursing claim subject to compliance with the terms and conditions of the reimbursing undertaking.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 4  / 30) Reimbursement Claim: The Claiming Bank’s Demand for Funds",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "It is pertinent to understand the definition of Reimbursement Claim as defined in Article 2(f) of URR 725. Reimbursement claim is defined as a request for reimbursement from the claiming bank to the reimbursing bank. Through the request, the claiming bank certifies that the claim is in compliance with the terms and conditions of the reimbursing undertaking and that the reimbursing bank must honour the claim. The claiming bank issues SWIFT MT 742 to claim reimbursement from the reimbursing bank. The most important aspect of SWIFT MT 742 is Field 71D titled “Charges”. Operationally, it is important for the claiming bank and the reimbursing bank to have clarity on the identification of charges that can be added or deducted by the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 2(h) of URR 725 explains “Reimbursement undertaking amendment” as modification of a named reimbursement undertaking in the form of advice from the reimbursing bank to the claiming bank. The modification includes cancellation of a reimbursement undertaking prior to honour of claim or acceptance of a draft.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 5  / 30) The Reimbursement Undertaking",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 2(g) of URR 725 states that a reimbursement undertaking is irrevocable implying that it is mandatory for the claiming bank to approve the amended reimbursement undertaking. This position is supported by Article 9(i)(i) of URR 725 which states that irrevocable reimbursement undertaking cannot be amended or cancelled without the agreement of the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Further, Article 9(d) of URR 725 states that when the reimbursing bank is authorized or requested by the issuing bank to issue its reimbursing undertaking to the claiming bank but is not prepared to do so, it must inform the issuing bank without delay. Through this Article, the reimbursing bank has the option not to issue a separate financial commitment pursuant to its operational and risk management policies. Article 9(g) of URR 725 states that a reimbursing bank is irrevocably bound to honour a reimbursement claim as of the time it issues the reimbursement undertaking. This article suggests that reimbursing bank cannot claim time to review a reimbursement claim once the reimbursement undertaking is issued. The language of Article 9(g) of URR 725 does not curtail or reduce the processing time instead it states that once the reimbursement undertaking is issued, no further approval regarding issuance of reimbursement undertaking is required.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(g) of URR 725 echoes a similar position where when the reimbursing bank is not prepared to act for any reason whatsoever under the reimbursement authorization or reimbursement amendment, it must so inform the issuing bank without delay. Article 6(g) is wider in scope as it covers reimbursement amendment, thereby implying that reimbursing bank may reject a reimbursement amendment.",
+          },
+          {
+            type: "paragraph",
+            text: "Further, Article 9(i)(ii) of URR 725 extends that the concept of irrevocability to reimbursement undertaking amendment. This article states that the reimbursing bank is irrevocably bound as of the time it issues the amendment.",
+          },
+          {
+            type: "paragraph",
+            text: "Furthermore, Article 9(i)(iii) of URR 725 provides the claiming bank an option to either accept or reject the amendment. Article 9(i)(iii) of URR 725 does not lay down a timeframe for conveying the decision of the claiming bank to the reimbursing bank. It is important to note that till the time the claiming bank communicates its decision the terms and conditions prior to the release of the amendment are enforceable.",
+          },
+          {
+            type: "paragraph",
+            text: "And lastly, Article 9(i)(iv) of URR 725 states that once, the claiming bank decides either to accept or reject the amendment, the claiming bank must inform the reimbursing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 6  / 30) Issuance and Receipt of Reimbursement Authorizations and Amendments",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 6 of URR 725 is titled issuance and receipt of a reimbursement authorization or reimbursement amendment.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(a) of URR 725 lays down the form for issuance of reimbursement authorizations and reimbursement amendments. The article provides for option of an authenticated teletransmission or a signed letter. Operationally, this refers to issuance of SWIFT MT 740 or 747 as the case may be.",
+          },
+          {
+            type: "paragraph",
+            text: "Reimbursement amendments would include cancellation of authorization to reimburse through issuance of SWIFT MT 747.",
+          },
+          {
+            type: "paragraph",
+            text: "Furthermore, Article 6(a) of URR 725 lays down the stipulation that once the reimbursement authorization has been issued through teletransmission, then all subsequent advice for amendments to reimbursing bank must be done through authenticated teletransmission. Authenticated teletransmission refers to issuance of appropriate SWIFT MT messages. Issuance of authenticated SWIFT MT by the issuing bank of reimbursement authorization or reimbursement amendment makes the advice operative and any subsequent mail confirmation shall be disregarded.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally in today’s banking environment, all form of advice is done are transmitted through SWIFT’s secure platform, hence from the viewpoint of risk management, reimbursement authorizations and reimbursement amendments through signed letter must be discouraged.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(b)(i) of URR 725 solidifies the position held in Article 3 of URR 725 suggesting that the issuing bank must not send a copy of the credit or copy of an amendment to the credit in place of, or in addition to the reimbursement authorization or reimbursement amendment. The language of Article 6(b)(i) of URR 725 reaffirms the independence principle between reimbursement authorizations and credits by using the words “in place of” implying replacement or “in addition” implying inclusion of credit or credit amendment used as a supporting document for reimbursement authorization will be disregarded.",
+          },
+          {
+            type: "paragraph",
+            text: "Reimbursement instruction or authorization expressly indicates that it applies to bank-to-bank reimbursements and operates independently of the credit as explained by Article 3 of URR 725.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 7  / 30) Prohibition on Multiple Authorizations and the Express Agreement Exception",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 6(b)(ii) of URR 725 states an issuing bank must not send multiple reimbursement authorizations to the reimbursing bank under one teletransmission or letter. The exception to this stipulation is when there is an express agreement to the contrary between the reimbursing bank and the issuing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "The implication of Article 6(b)(ii) of URR 725 is one message must contain one authorization unless expressly agreed by reimbursing bank. It is pertinent to note why Article 6(b)(ii) of URR 725 discourages multiple reimbursement instructions by default. The reason for such a position, operationally, the reimbursing bank will find it hard to track and reconcile on compliance within the trade finance operations division. Further, there are risks involving instructions missed out due to human error leading to complications in the compliance.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally, multiple reimbursement instructions under the same authorization teletransmitted through issuance of SWIFT MT 740 is discouraged and avoided from the viewpoint of risk management.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 8  / 30) Certificate of Compliance Prohibition and Mandatory Authorization Content",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 6(c) of URR 725 prohibits the issuing bank from incorporating any condition that would require the reimbursing bank to provide a certificate of compliance with the terms and conditions of the credit. Insistence on such a certificate would be inconsistent with the independence principle envisaged through Article 3 of URR 725 and hence unacceptable.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(d)(i)-(iii) of URR 725 lists the requirements mandatorily to be included in a reimbursement authorization. Similarly, Article 9(e)(i)-(iii) of URR 725 lists the requirements mandatorily to be included in a reimbursement undertaking.  Requirements such as credit number recorded through Field 20 of SWIFT MT 740 and covered through Article 6(d)(i) of URR 725, currency code and amount authorized for the purpose of reimbursement recorded through Field 32B of SWIFT MT 740 and covered through Article 6(d)(ii) of URR 725, credit amount tolerance is covered through Field 39A of SWIFT MT 740 along with Field 39C of SWIFT MT 740 covers any additional amounts such as insurance, freight, interest, etc. as prescribed through Article 6(d)(iii) of URR 725.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 9  / 30) Currency, Amount, and Expiration Date of the Reimbursement Undertaking",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 9(e)(iv) of URR 725 makes it mandatory to indicate the currency and amount of the reimbursement undertaking indicating that the reimbursement authorization and the reimbursement undertaking might be different.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(e)(v) of URR 725 states that the reimbursement undertaking is subject to a definitive expiration date for claims from the claiming bank. The expiration date is inclusive of any usance period if applicable. This position is contrary to the mandate provided by the Issuing bank through reimbursement authorization which does not contain the same definitive expiration date.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 10  / 30) Claiming Bank Designation and Charges Provisions",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 6(d)(iv) of URR 725 deals with the manner through which claiming bank is recorded through Field 41a of SWIFT MT 740. The text of Article 6(d)(iv) of URR 725 states that the claim for reimbursement can be made by claiming bank or by any bank in cases where credit is available with any bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Further, Article 6(d)(iv) of URR 725 states that the default position is that the reimbursing bank is authorized to pay any claiming bank. Correlating Article 6(d)(iv) of URR 725 with SWIFT MT 740, Field 41 is used to record the name of the bank who is authorized to claim reimbursement. Swift handbook 2025 states that option D must be used to reflect the default position held in Article 6(d)(iv) of URR 725. Furthermore, the Swift handbook 2025 states that when the narration “Any Bank” is used to imply open authorization, name of the city / country need not be mentioned.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(d)(v) of URR 725 deals with parties responsible for charges under reimbursement authorization or reimbursement amendment. Similarly, Article 9(e)(vi) of URR 725 deals with parties responsible for charges under reimbursement undertaking.",
+          },
+          {
+            type: "paragraph",
+            text: "The description of Field 71a of SWIFT MT 740 states the party the reimbursing bank’s charges are to be borne. Article 6(d)(v) of URR 725 and Article 9(e)(vi) of URR 725 should be read in conjunction with Article 16 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 16 of URR 725 which is titled Charges. Article 16(a) of URR 725 states that by default all reimbursing bank’s charges are for the account of the issuing bank. This implies that when the option OUR is selected in Field 71a of SWIFT MT 740 then those charges are for the account of issuing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 11  / 30) Drafts and Notification Requirements",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 6(e) of URR 725 and Article 9(c) of URR 725 state the mandatory information required to be included in the time draft when the reimbursing bank is requested to accept and pay a time draft. The mandatory information required to be included in the time draft includes tenor of draft to be drawn, name of the drawer and party responsible for acceptance and discount charges.",
+          },
+          {
+            type: "paragraph",
+            text: "The final sentence of Article 6(e)(iii) and Article 9(e)(iii) of URR 725 states that an issuing bank should not require a sight draft to be drawn on the reimbursing bank. The rationale behind such a stipulation is usage of drafts is to calculate predetermined future date, When the reimbursement is due at sight, drafts add to redundant paperwork with an operational risk of discrepancy.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(f) of URR 725 states that when there is any requirement for pre-notification of a reimbursement claim or pre-debit notification to the issuing bank must be recorded in the credit itself and not in reimbursement authorization. Article 6(f) of URR 725 governs where the requirements must be stipulated.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 12  / 30) Charges: Obligations, Collection, and Liability",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 16(b) of URR 725 states that with reference to charges, reimbursing bank is obligated to follow the instructions laid down in the reimbursement authorization while honouring a reimbursement claim.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 16(c) of URR 725 further expands the position held in Article 16(b) of URR 725. The essence of Article 16(c) of URR 725, it is the responsibility of the reimbursing bank to collect charges when the reimbursement authorization states the reimbursing bank’s charges are on the account of the beneficiary. In cases, where the reimbursing bank is unable to collect charges by virtue of charges being not paid for any reason or a reimbursement claim not being presented to the reimbursing bank then the issuing bank remain liable for such charges.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 16(d) of URR 725 states that any amount charged to the reimbursing bank in the form of charges by the claiming bank will be reimbursed provided the claiming bank indicates the amount of such charges. This amount is in addition to the amount of authorization and does not form part of original limit of reimbursement authorization.",
+          },
+          {
+            type: "paragraph",
+            text: "Corollary, if the claiming bank does not indicate the charges separately as envisaged in Article 16(d) of URR 725, then the reimbursing bank is not liable to reimburse the amount as they have not been identified separately.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 16(e) of URR 725 states that the issuing bank must provide complete set of instructions regarding charges to the reimbursing bank. In the absence of instructions so provided by the issuing bank, all charges shall be for the account of the issuing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 13  / 30) Interest Claims / Loss of Value and the Foreign Laws Indemnity",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 17 of URR 725 titled interest claims / loss of value.",
+          },
+          {
+            type: "paragraph",
+            text: "The first part of Article 17 of URR 725 states that the reimbursing bank is indemnified from any claim for loss of interest, loss of value due to exchange rate fluctuations including revaluations or devaluations and that such claims are dealt directly between issuing bank and the claiming bank. This reinforces the role of reimbursing bank as an intermediary acting on behalf of issuing bank to facilitate reimbursement transactions.",
+          },
+          {
+            type: "paragraph",
+            text: "The latter part of Article 17 of URR 725 clarifies that such indemnity does not cover non-performance of the reimbursing bank under a reimbursement undertaking. This part emphasis while performing the role as an intermediary on behalf of the issuing bank, the reimbursing bank is expected to fully comply with the terms and conditions stipulated under the reimbursement undertaking.",
+          },
+          {
+            type: "paragraph",
+            text: "Therefore, first part of Article 17 protects the reimbursing bank from any financial claims arising due to exchange risk or loss of interest due to inadvertent delays caused from the counters of issuing bank. The second part of Article 17 unequivocally states that it is responsibility of the reimbursing bank to perform as per the terms and conditions of the reimbursement undertaking and any failure can attract legal or financial claims.",
+          },
+          {
+            type: "paragraph",
+            text: "It is important to understand that the reimbursing bank’s responsibility to perform as the terms and conditions of the reimbursement undertaking includes compliances to internal policies, regulations and law to which jurisdiction the reimbursing bank is subjected to.",
+          },
+          {
+            type: "paragraph",
+            text: "Furthermore, since the reimbursing bank has agreed to act as an intermediary at the request and initiation of issuing bank and deal with claiming bank, the issuing bank is bound and liable to indemnify the reimbursing bank against all obligations and responsibilities imposed by foreign laws and usages. The language contained in Article 13 of URR is similar to the position held in Article 37(d) of UCP 600. The rationale based on the fact that it is the issuing bank that is the initiator of the transaction and hence the responsibility to indemnify falls at the desk of the issuing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 14  / 30) Force Majeure and the Issuing Bank's Ultimate Liability",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 15 of URR 725 details with Force Majeure. The article states that a reimbursing bank starting with the phrase “assumes no liability or responsibility for the consequences arising out of the interruption”. This phrase implies that when there are force majeure interruptions, the reimbursing bank assumes no liability for delays in releasing claims of the claiming banks. Further, the claiming bank by virtue of Article 15 of URR 725 losses the right to claim interest on the delay caused due to Force Majeure events.",
+          },
+          {
+            type: "paragraph",
+            text: "The solution available to the claiming bank in the event where the reimbursing bank’s operations are disrupted due to force majeure events is to seek reimbursement from the issuing bank. Article 1 of URR 725 states that the reimbursing bank acts on the instructions and under the authority of the issuing bank. This suggests that reimbursing bank derives the authority from the issuing bank and in cases where the reimbursing bank’s operations are disrupted due to force majeure events, the issuing bank must step in and honour the reimbursement claim.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 15  / 30) Disclaimer on Transmission of Messages",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 14 of URR 725 is drafted on similar lines as of Article 35 of UCP 600. The objective of this article is to absolve the reimbursing bank of any liability or responsibility from the consequences arising out of delay, loss in transit, mutilation, corrupted message transmitted from the reimbursing bank to the claiming bank or vice versa. From an operational view point, Article 14 of URR 725 is applicable to issuance and receipt of a reimbursement authorization or reimbursement claim or reimbursement amendment along with transmission of the messages and corruption arising during such transmission.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 14 of URR 725 offers protection even in instances where the reimbursing bank may have taken the initiative in the choice of delivery service.",
+          },
+          {
+            type: "paragraph",
+            text: "The last statement of Article 14 of URR 725 states that the reimbursing bank assumes no liability or responsibility for interpretation of technical terms contained in the credit or incorrectly translated document. Article 14 of URR 725 deviates from Article 35 of UCP 600 by excluding the stipulation that the reimbursing bank may transmit the terms without translating them.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 16  / 30) Amendment, Cancellation, and Default Content of Reimbursement Authorizations",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 8 of URR 725 records the manner through which the reimbursement authorization can be amended or cancelled.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 8(a) of URR 725 states that the issuing bank may issue a reimbursement amendment or cancel a reimbursement at any time upon sending notice to that effect.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 2(d) of URR 725 defines Reimbursement Amendments as an advice from the issuing bank to a reimbursing bank informing changes to a reimbursement authorization. SWIFT MT 747 is used by Issuing bank to inform the reimbursing bank of amendments which are considered part of the authorization to reimburse.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 8(b) of URR 725 states that the manner in which the issuing bank will communicate amendment or cancellation of the reimbursement authorization. For amendment of reimbursement authorization, the issuing bank must send a notice to the nominated bank or where applicable to the advising bank. This notice must contain the updated set of reimbursement instructions to the nominated bank and where applicable to advising bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 8(c) of URR 725 states that in cases, where the reimbursement claim has been honoured or a draft accepted by the reimbursing bank prior to the receipt of the amendment or cancellation request. The purpose of such a position is to indemnify / protect the reimbursing bank from the legal consequences arising out of amendment or cancellation after the claim has been honoured or draft has already been accepted.",
+          },
+          {
+            type: "paragraph",
+            text: "Further, Article 9(b) of URR 725 lists the information that is mandatory to be covered in the reimbursement undertaking. This implies that SWIFT MT 740 is designed to cover the information covered by Article 9(b) of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(b)(i) of URR 725 states that for the purpose of reimbursement, the reimbursement undertaking must contain the credit number. This is achieved through Field 20 of SWIFT MT 740. This credit number must match with Field 20 of SWIFT MT 700.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(b)(ii) of URR 725 states that for the purpose of reimbursement, the reimbursement undertaking must contain the currency code and the amount. This is achieved through Field 32B of SWIFT MT 740 must record the currency code and amount. These details must match with Field 32B of SWIFT MT 700.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(b)(iii) of URR 725 states that for the purpose of reimbursement, the reimbursement undertaking must contain additional amounts payable and tolerance, if any. This is achieved through Field 39C of SWIFT MT 740 must record the Additional Amount covered. These details must match with Field 39C of SWIFT MT 700.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(b)(iv) of URR 725 states that for the purpose of reimbursement, the reimbursement undertaking must contain full name and address of the claiming bank to which the reimbursement undertaking should be issued. This is achieved through field 58a in SWIFT MT 740 records the claiming bank or the bank that is going to claim money. Field 53a in SWIFT MT 700 records the bank from where the negotiating bank is expected to be reimbursed. Hence it is the reimbursing bank. Therefore, Field 53a in SWIFT MT 700 will record the reimbursing bank and Field 58a in SWIFT MT 740 will record the bank who will claim from the reimbursing bank. It is pertinent to note that the details in these fields will not mirror each other, instead they will complement.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(b)(v) of URR 725 states that for the purpose of reimbursement, the reimbursement undertaking must contain latest date for presentation of a claim, including any usance period. This is achieved through field 72Z of SWIFT MT 740 which is titled Sender to receiver information. Usage rule of field 72Z of SWIFT MT 740 states that any latest date for a reimbursement claim or an expiry date should be included in this field. Further, the purpose of field 72Z of SWIFT MT 740 is vast, covering pre-debit notification from the reimbursing bank to the issuing bank, covering instructions about responsibility and sharing of charges.",
+          },
+          {
+            type: "paragraph",
+            text: "When the Issuing bank is requesting or authorizing the reimbursing bank to issue an irrevocable undertaking and subject to rules contained in Article 9(b) of URR 725 must be read with the application of Article 7 of URR 725. Article 7 of URR 725 starts with the words “Except to the extent expressly agreed to by the reimbursing bank”, the emphasis is on the express agreement and Article 9(b)(v) of URR 725 states that when the authorization contains a deadline for presentation of a claim in the form of latest date of presentation then the authorization must contain the deadline.",
+          },
+          {
+            type: "paragraph",
+            text: "Accordingly, the agreed deadline forms part of the irrevocable reimbursement undertaking issued by the issuing bank to the reimbursing bank issued under Article 9 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(b)(vi) of URR 725 states that for the purpose of reimbursement, the reimbursement undertaking must contain details about the parties responsible for charges. This is achieved through field 71D of SWIFT MT 740 must record the parties responsible for charges. These details must correspond with the details recorded in Field 71D of SWIFT MT 700. According to SWIFT handbook 2025, all charges except negotiation and transfer charges are to be borne by the applicant.",
+          },
+          {
+            type: "paragraph",
+            text: "Through the instructions contained in the reimbursement authorization, the issuing bank can provide approval to the reimbursing bank to accept and pay a time draft drawn on the reimbursing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Such reimbursement instruction or authorization expressly indicates that it applies to bank-to-bank reimbursements and operates independently of the credit. Article 3 of URR 725 titled Reimbursement Authorizations versus credits expressly states that authorization is separate from the credit and that the reimbursing bank is not bound by the terms and conditions of the credit, even if any reference whatsoever to it is included in the reimbursement authorization.",
+          },
+          {
+            type: "paragraph",
+            text: "This claim accrues when the claiming bank agrees to honour or negotiate a presentation that complies with the terms and conditions of the credit and subsequently honours or negotiates the presentation and thereafter, advances funds to the beneficiary or incurs the relevant undertaking.",
+          },
+          {
+            type: "paragraph",
+            text: "The relationship between the claiming bank and reimbursing bank arises as a result of issuing bank authorizing reimbursement in favour of claiming bank through its instructions to the reimbursing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 17  / 30) Claiming Bank: Definition and Scope",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 2(e) of URR 725 defines Claiming Bank as the bank that honours or negotiates a credit and presents a reimbursement claim to the reimbursing bank. “Claiming bank” includes a bank authorized to present a reimbursement claim to the reimbursing bank on behalf of the bank that honours or negotiates.",
+          },
+          {
+            type: "paragraph",
+            text: "The first part of the definition defines Claiming bank as the bank that releases funds due to the beneficiary as part of honour or negotiation and thereafter presents the claim of reimbursement to another bank. The bank from whom the reimbursement is sought is the reimbursing bank. The claim of reimbursement is made to the bank recorded in the credit through Field 53A of SWIFT MT 700.",
+          },
+          {
+            type: "paragraph",
+            text: "Upon honouring or negotiating a complying presentation, the nominated bank / claiming bank submits a reimbursement claim to receive the funds due from the reimbursing bank. It is important to understand the distinction between the amount released to the beneficiary as part of negotiation or deferred payment and the amount due to the claiming bank as part of reimbursement.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 7 of URR 725 further provides that in cases where there is an unutilized portion of the reimbursement authorization of the credit, the reimbursing bank must inform the issuing bank without delay and as a result of the communication received by the issuing bank, issuing bank must cancel the unutilized portion of reimbursement authorization. Such a position is held as per the last paragraph of Article 7 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Therefore, there is no independent contractual arrangement between claiming bank and reimbursing bank. The reimbursing bank acts solely in accordance with the mandate of an intermediary and complies with the reimbursement instructions received from the issuing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "The second part of the definition contained in Article 2(e) of URR 725 relates to the scenario when the claiming bank is unable to claim funds directly from the reimbursing bank and seeks support of another bank to approach the reimbursing bank on its behalf and claim funds. In such circumstances this another bank acting on behalf of the claiming bank is also considered claiming bank and is accorded with the same rights and responsibilities as the original claiming bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 18  / 30) UCP/URR Interplay, Reimbursing Bank Designation, and Effective Date",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Field 40E of SWIFT MT 700 records the rules to which the documentary credit is subjected to. When the Field 40E of SWIFT MT 700 records UCPURR latest version – this implies that the credit is subjected to latest version of Uniform Customs and Practices for documentary credits and the reimbursement is subject to the latest version of Uniform Rules for Bank-to-Bank Reimbursement and that Article 13 (b) and (c) of UCP 600 are replaced and only Article 13(a) of UCP 600 is applicable.",
+          },
+          {
+            type: "paragraph",
+            text: "Recording of URR latest version as one of the rules to which the documentary credit is subjected to in Field 40E of SWIFT MT 700 is optional. In instances where Field 40E of SWIFT MT 700 records UCP latest version implies that reimbursement is subject to Article 13(b) and (c) of UCP 600.",
+          },
+          {
+            type: "paragraph",
+            text: "Such a stipulation suggests that the documentary credit which is subjected to UCP 600 is expressly modified by the parties to the credit and in accordance with Article 1 of UCP 600.",
+          },
+          {
+            type: "paragraph",
+            text: "The wordings of Article 1 of UCP 600 suggests that the documentary credit can be structured in a manner such that the credit may state the extent to which the rules may be applicable. Such coexistence is also reflected in the codes permitted in Field 40E of SWIFT MT 700.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 40E of SWIFT MT 700 also permits inclusion of other laws or rules through the option “OTHR”.",
+          },
+          {
+            type: "paragraph",
+            text: "Through the inclusion of URR 725 in Field 40E of SWIFT MT 700, the default bank-to-bank reimbursement framework of Article 13(b) and (c) of UCP 600 is replaced by the framework contained in URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 53a of SWIFT MT700 records the Reimbursing bank. This field specifies the name of the bank which has been authorized by the issuer to reimburse drawings under the documentary credit.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally, through this field issuing bank is recording the name of the financial institution from where funds will be reimbursed to the bank (nominated / claiming) which is claiming funds as a result of having already paid the beneficiary or having incurred a deferred payment undertaking.",
+          },
+          {
+            type: "paragraph",
+            text: "Swift handbook permits recording of any financial institution which can be designated as reimbursing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "The issuing bank through SWIFT MT 740 requests the receiver to honour claims for payment or negotiation, thereby acting as a reimbursing bank. SWIFT MT 740 is the mandate and the reimbursement instructions that connects the reimbursing bank with the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "The mandate received by the reimbursing bank to reimburse stems from issuance of SWIFT MT 700 and communicated separately indicating an independent contractual obligation through SWIFT MT 740. Article 5 of URR 725 states that it is the responsibility of the issuing bank to provide information as required for reimbursement authorization and the credit, and further the issuing bank is responsible for any consequences resulting out of non-compliance with this provision.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally, the reimbursement authorization becomes effective once SWIFT MT 700 is issued. SWIFT MT 740 does not contain a field title “date of issue” unlike Field 31C of SWIFT MT 700 which records the date on which the issuing bank considers the documentary credit as being issued. Hence, issue date of SWIFT MT 740 has no impact on the effective date of reimbursement authorization.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 19  / 30) Strict Compliance, Expiry Date, and the Independence Principle",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 4 of URR 725 states that the terms and conditions covered through the reimbursement authorization are strictly binding and reimbursing bank is obligated to honour a reimbursement claim that satisfies the terms and conditions.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 7 of URR 725 states that by default, the reimbursement authorization should not be subject to an expiry date or latest date for presentation of a claim except to the extent expressly agreed to by the reimbursing bank and contained in Article 9 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally, SWIFT MT 740 does contain a dedicated field to indicate expiry date or latest date for presentation and as per SWIFT Handbook 2025, Field 72Z of SWIFT MT 740 titled Sender to Receiver Information which states that this field should be used to specify the latest date for presentation of a reimbursement claim or an expiry date for the reimbursement authorization.",
+          },
+          {
+            type: "paragraph",
+            text: "Furthermore, Article 7 of URR 725 reiterates the position held in Article 3 of URR 725 stating that reimbursing bank will disregard and assume no responsibility for the expiry date of the credit as reimbursement authorization is an independent contractual obligation between the issuing bank and the reimbursing bank.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 20  / 30) Overview and Compliance (Article 11)",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 11 of URR 725 deals with processing a reimbursement claim.",
+          },
+          {
+            type: "paragraph",
+            text: "Understanding the term “processing a reimbursement claim”. This is the stage in the bank-to-bank reimbursement workflow where the claiming bank has honoured or negotiated under the documentary credit and seeks reimbursement from the reimbursing bank as mandated by the issuing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "The claim from the claiming bank is processed for compliance and once the reimbursing bank determines that the claim is complying to the terms and conditions stipulated in reimbursement authorization.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 21  / 30) MT 744 – Non-Compliance and Refusal",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "In instances where the reimbursement claim does not comply with the terms and conditions of the reimbursement authorization, the reimbursing bank will send a notice of non-confirmation reimbursement claim through SWIFT MT 744.",
+          },
+          {
+            type: "paragraph",
+            text: "The scope of SWIFT MT 744 states that this message type is used to notify the sender (the claiming bank) that the receiver (the reimbursing bank) finds the claim not in accordance with the instructions set out in the reimbursement authorization issued through SWIFT MT 740. Further, the scope of SWIFT MT 744 uses the word “on the face of it” implying that the reimbursing claim is found non-compliant based on the submission of the documents mandated by the reimbursement authorization. It is mandatory for the reimbursing bank to list out the reasons for non-compliance through issue of SWIFT MT 744.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 73R of SWIFT MT 744 titled Reason for non-payment implies this field specifies the reasons for non-payment.",
+          },
+          {
+            type: "paragraph",
+            text: "Issue of SWIFT MT 744 by the reimbursing bank to the claiming bank has the effect of withholding further processing of the reimbursement claim and withholding reimbursement pending resolution of the discrepancies identified.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 73S of SWIFT MT 744 titled disposal of reimbursement claim implies this field specifies the action taken by the reimbursing bank after the claim by the claiming bank has been examined. One of the three codes must mandatorily be recorded where the reimbursing bank determines not to honour the reimbursement claim. The codes are as follows:",
+          },
+          {
+            type: "list",
+            items: [
+              "CANC – Claim is cancelled.",
+              "HOLD – Claim is held.",
+              "RETD – Claim is rejected and documents (draft) returned.",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "(Part 22  / 30) Article 11(a)(i) – Three-Day Processing Period",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 11(a)(i) of URR 725 states that the reimbursing bank has a maximum of three banking days following the day of receipt of the reimbursement claim to determine compliance with the reimbursement authorization and process the claim. The second sentence of Article 11(a)(i) of URR 725 is similar to Article 33 of UCP 600 which states that when the bank is under no obligation to accept a delivery beyond the working hours. However, on operational basis, if the bank chooses to accept a delivery of a courier beyond the working hours, then in such instances the delivery is deemed received for the next following banking day. Acceptance of delivery by courier outside the banking hours is the prerogative of the department and not a rule or a guideline set out in URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "When Article 11(a)(i) of URR 725 is read along with Article 9(f) of URR 725, if the deadline falls on a day when the bank is closed for operations in normal due course and not for force majeure reasons then extension is available to the first following banking day.",
+          },
+          {
+            type: "paragraph",
+            text: "The last sentence of Article 11(a)(i) of URR 725 deals with pre-debit notification mandated by the issuing bank then the pre-debit notification period shall be in addition to the processing period of 3 banking days. While pre-debit notification is not defined by URR 725, it is a form of alert sent by the reimbursing bank to the issuing bank informing that the account of the issuing bank will be charged.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 23  / 30) Article 11(a)(ii) – Refusal Notice and Reason Codes",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 11(a)(ii) of URR 725 deals with the situation where the reimbursing bank determines not to reimburse. The decision not to reimburse can include discrepancy under a claim or any operational, regulatory reasons for which reimbursement under an authorization is rejected must be communicated without delay and through SWIFT MT 744. This refusal notice must comply with the timelines set out in Article 11(a)(i) of URR 725. This refusal notice issued through SWIFT MT 744 must list the reasons for non-payment of the claim.",
+          },
+          {
+            type: "paragraph",
+            text: "Field 73R of SWIFT MT 744 lists the code as reason for non-payment. SWIFT Handbook 2025 lists ten standard reason codes.",
+          },
+          {
+            type: "list",
+            items: [
+              "DIFF - Different claiming bank.",
+              "DUPL - Duplicate claim.",
+              "INSU - Insufficient information in the claim (for example, payment instruction incomplete, shipment data missing).",
+              "NAUT - Not authorised by Issuing Bank to reimburse.",
+              "OTHR - Any other reason which must be specified in text (2nd subfield).",
+              "OVER  - Total claim exceeds maximum documentary credit amount (excluding any additional amounts covered).",
+              "REFE - Refer to Issuing Bank for further instruction.",
+              "TTNA - TT claim not allowed.",
+              "WINF - Information stated in the claim differ from the R/A.",
+              "XAMT - Total claim exceeds available documentary credit amount (sum of maximum credit amount and additional amounts covered).",
+            ],
+          },
+        ],
+      },
+      {
+        heading: "(Part 24  / 30) Article 11(b) – Back Value Prohibition",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 11(b) of URR 725 incorporates the term “value dating” and “back value”. The term “value dating” is derived from the term “value date”. Value date in foreign exchange transactions is the designated delivery date when the funds are transacted and the account is settled. Hence the term “back value” refers to back dating a transaction implying the delivery date is pre-dated to the current date.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(b) of URR 725 explicitly prohibits reimbursing banks from processing a reimbursement claim with a back value date. The purpose of such restriction is found in Article 17 of URR 725 which deals with interest claim / loss of value, preventing manipulation of the value date to avoid paying interest to the claiming bank that may arise from delayed performance as envisaged under Article 17 of URR 725.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 25  / 30) Articles 11(d) and (e) – Assignment and Intermediary Role",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 11(d) of URR 725 states that by default, reimbursing bank will effect reimbursement under a reimbursement claim only to the claiming bank. The assignment of proceeds is acceptable only in cases where there is an express agreement between the reimbursing bank and the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(e) of URR 725 reiterates the distinction between reimbursement authorization and documentary credits. Article 11(e) of URR 725 states that payment released by the claiming bank to the beneficiary under reserve or against an indemnity has no impact on the reimbursing bank’s processing of a reimbursement claim. The wording “reimbursing bank assumes no responsibility” reiterates that reimbursing bank purely acts as an intermediary acting on behalf of issuing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "From the viewpoint of a reimbursing bank, reimbursing bank’s responsibility to honour a complying reimbursement claim and will disregard any indication that the documentary credit was honoured by the claiming bank under reserve or against an indemnity.",
+          },
+          {
+            type: "paragraph",
+            text: "Any fraud or discrepancy exposed at a later stage, on the part of the claiming bank or the beneficiary is for the issuing bank, claiming bank and beneficiary outside of the scope of URR 725.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 26  / 30) Future-Dated Reimbursement",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 11(c) of URR 725 starts with the statement “when a reimbursing bank has not issued a reimbursement undertaking” states that when the authorization has been issued by the issuing bank for the claiming bank with reimbursing bank acting as an intermediary and that claiming bank has no direct reimbursement relationship with the reimbursing bank. Therefore, reimbursing bank acting on the set of instructions received from the issuing bank for compliance by the claiming then that set of instructions is known as “reimbursement authorization” and envisaged through Article 2(c) of URR 725. Article 2(g) of URR 725 which deals with a separate irrevocable undertaking of the reimbursing bank in favor of the claiming bank and when this separate irrevocable undertaking is missing (despite being authorized or requested upon by the issuing bank), then Article 11(c) of URR 725 is applicable.",
+          },
+          {
+            type: "paragraph",
+            text: "The second part of Article 11(c) opening statement covers reimbursement due on a future maturity date. The maturity date is predeterminable future date based on usance period stipulated through drafts recorded through Field 42C of SWIFT MT 740 or through Field 42P of SWIFT MT 740 titled Negotiation / Deferred Payment details.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(c)(i) of URR 725 states that the reimbursement claim requested by the claiming bank to the reimbursing bank must specify the future maturity date or the predetermined reimbursement date.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(c)(ii) of URR 725 deals with the time frame for presentation of the reimbursement claim by the claiming bank to the reimbursing bank. The default rule contained in Article 11(c)(ii) of URR 725 is if the reimbursement claim is presented more than ten banking days prior to the predetermined maturity date of reimbursement then the reimbursing bank may disregard the reimbursement claim.",
+          },
+          {
+            type: "paragraph",
+            text: "The phrase “may disregard” indicates that the rules contained in URR 725 explicitly do not prohibit and it is a discretion available to the reimbursing bank to disregard or acknowledge the reimbursement claim. In cases, where the reimbursing bank chooses to disregard the reimbursement claim Article 11(c) of URR 725 mandates communication to the claiming bank by issuance of SWIFT Message or another other expeditious means without delay. This communication is mandatory as the reimbursing bank informs the claiming bank to resubmit the reimbursement claim within the timelines set out in Article 11(c)(ii) of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(c)(iii) of URR 725 deals with the situation where the claiming bank presents for a reimbursement claim where the predetermined reimbursement date is more than three banking days following the day of the reimbursement claim. Then in such a situation the trigger for examination of the reimbursement claim falls on the predetermined date and the reimbursing bank is allowed time for three banking days following the receipt of the reimbursement claim plus any additional period available through Article 11(a)(i) of URR 725 whichever is later.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(c)(iii) of URR 725 clarifies that the reimbursing bank will examine the reimbursing claim on the predetermined reimbursement date and not prior to that. Further, the bank is permitted an additional period of three banking days following the receipt of the reimbursement claim or any additional period available through Article 11(a)(i) of URR 725, whichever is later before issuance of any non-reimbursement notice. Hence, the date on which the claiming bank submits a reimbursement claim does not, by itself, trigger an automatic examination of the claim by the reimbursing bank and the examination is triggered on the predetermined reimbursement date.",
+          },
+          {
+            type: "paragraph",
+            text: "In such situations the reimbursing bank is under no obligation to provide notice of non-reimbursement before the examination is triggered on the predetermined reimbursement date. Thereafter, the notice shall be issued no later than the close of the third banking day following the receipt of the reimbursement claim plus any additional period mentioned in Article 11(a)(i), whichever is later.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 27  / 30) Duplication of a Reimbursement Authorization",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 12 of URR 725 titled duplications of a Reimbursement Authorization. Article 12 of URR 725 deals with the duplication in the set of instructions / authorizations issued by an issuing bank to a reimbursing bank. This is an operational framework structure which states that the issuing bank needs to ensure that no duplicate reimbursement instructions are issued. The article further states that in instances where a duplicate authorization or additional instructions have been issued by the issuing bank then the responsibility to recover the duplicate amount reimbursed is the sole responsibility of the issuing bank. The reimbursing bank assumes no liability or responsibility for consequences arising from such duplication.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 11(c)(i)(ii)(iii) of URR 725 provides for presentation of reimbursement claim by the claiming bank to the reimbursing bank is closer to the predetermined future date for reimbursement thereby reducing the possibility of duplication. Article 12 of URR 725 discusses the implications and responsibility arising from a duplicate reimbursement claim.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 28 / 30) Standards for a Reimbursement Claim and Liability Exemption",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 10 of URR 725 deals with the request for reimbursement from the claiming bank to the reimbursing bank. The manner through which the reimbursement claim is requested and the contents of the reimbursement claim form the genesis of Article 10 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(i) of URR 725 deals with the manner through which the reimbursement claim is communicated by the claiming bank to the reimbursing bank. Article 10(a)(i) of URR 725 states that by default the reimbursement claim must be in the form of a teletransmission. Operationally, teletransmission refers to issuance of SWIFT MT 742 by the claiming bank with the recipient as the reimbursing bank or an original letter dispatched by the claiming bank to the reimbursing bank. Article 10(a)(i) of URR 725 provides for an exception to these forms of communication of claim. The article states that the reimbursement authorization may specifically prohibit a form of transmission of reimbursement claim or insist on a certain form of communication to claim reimbursement.",
+          },
+          {
+            type: "paragraph",
+            text: "In instances, where alternate mode of transmission of reimbursement claim is provided by the reimbursement authorization, the claiming bank will have to authenticate the claim with the reimbursing bank for the request to be processed. Any delay arising out of the consequences resulting from the authentication is on the account of the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "However, if the reimbursement claim is made through teletransmission then no confirmation is required. However, if a confirmation message is teletransmitted by the claiming bank unless requested by the reimbursement authorization, then any delay in processing of the reimbursement claim in on the account of the claiming bank. Claiming bank cannot demand any claim for loss of interest. The rationale behind such a position is Article 10(a)(i) of URR 725 does not envisage a confirmation mail for the reimbursement claim, hence a confirmation mail will be construed as a separate claim thereby leading to a duplicate reimbursement claim.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(ii) – (vi) deals with the details required to be included in the reimbursement claim sent by the claiming bank to the reimbursing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(ii) of URR 725 states that the reimbursement claim must indicate the credit number and the issuing bank. If the reimbursing bank has issued a reimbursing undertaking then the reimbursing bank’s reference number must also be mentioned.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(iii) of URR 725 states that the amount claimed must be recorded separately. This means that the principal amount and any additional amount due and charges must be clearly distinguished.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(iv) of URR 725 states that when the claiming bank has determined documents as complying and honoured the presentation, then it is the responsibility of the claiming to advise the issuing bank that pursuant to the terms of credit the documents are complying and the credit has been honoured vide deferred payment, acceptance or negotiation. Such an advice informing complying presentation to the issuing bank becomes the operational trigger for reimbursement to the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "The claiming bank cannot include the entire details of the credit in the reimbursement claim to the reimbursing bank as the agreement between the issuing bank and the reimbursing bank is independent of the credit issued. The position held through Article 10(a)(iv) of URR 725 is in line with the position held in Article 3 of URR 725 which differentiates reimbursement authorizations from credits.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(v) of URR 725 states that a separate teletransmission or letter must be used for individual reimbursement claims. Multiple reimbursement claims included under one teletransmission or letter are prohibited.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(a)(vi) of URR 725 states that in cases of claims made under reimbursement, the claim must comply with the terms and conditions of the reimbursement undertaking.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(b) of URR 725 deals with the situation where the claiming bank is expected to draw a time draft drawn on the reimbursing bank and forward the draft with the reimbursement claim for processing. Further the claim must mandatorily contain the general description of the underlying transaction, country of origin of goods, services or performance, place of destination or performance and if the transaction covers the shipment of merchandise and lastly date and place of shipment. This information must be included in the claim along with other details agreed upon between the reimbursing bank and the claiming bank. The details included in the claim are for audit and operational purposes and are out of purview for the purposes of compliance with the documentary credit and in line with independence principle as envisaged in Article 3 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 10(c) of URR 725 shifts the burden of compliance on the claiming bank and indemnifies the reimbursing bank from claims of loss of interest arising out of any non-acceptance or delay in processing in circumstances where the claiming bank fails to follow the provisions of Article 10 of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 6(h) of URR 725 begins with words “in addition to the provisions of Articles 3 and 4, implying reimbursing bank is protected by the independence principle between reimbursement authorization and documentary credit along with the principle of strict compliance that the reimbursing bank will only honour claim when the reimbursement claim satisfies the terms and conditions stipulated.",
+          },
+          {
+            type: "paragraph",
+            text: "This results in reimbursing bank being exempted from liability from losses arising out of the consequences resulting from failure to comply with the reimbursement authorization or reimbursement amendment as covered by the provisions of Article 6.",
+          },
+          {
+            type: "paragraph",
+            text: "This implies that it is the responsibility of the claiming bank to ensure that the only single claim is contained in teletransmission of claims along with complying with the requirement of the reimbursement authorization. Hence as an illustration for delay, if there are duplicate reimbursement claims being teletransmitted and there is a delay in reimbursement by the reimbursing bank then the reimbursing bank is exempted from the liability of losses.",
+          },
+          {
+            type: "paragraph",
+            text: "Further it is the responsibility of the issuing bank include instructions applicable to documentary credit and reimbursement authorization. In instances where the issuing bank wrongfully includes instructions in the reimbursement authorization when such an instruction is to be included within the text of documentary credit, then delays arising out of instructions are on the account of the issuing bank and the reimbursing bank is exempted from liability under the provisions contained in Article 6(h) of URR 725.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 29 / 30) Amendment of Reimbursement Authorizations: Irrevocability, Undertaking Impact, and Acceptance",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 9(h)(i) of URR 725 states that irrevocable reimbursement authorization cannot be amended or cancelled without the agreement of the reimbursing bank. This implies that on issuance of an authorization or amendment a separate financial obligation is created independent of documentary credit and any changes in this financial structure would require an agreement between both the issuing bank and the reimbursing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(h)(ii) of URR 725 deals with the impact of amendment of irrevocable reimbursement authorization on the reimbursing bank. In the event of acceptance of amendment by the reimbursing bank, the reimbursing bank may amend its undertaking to reflect the amendment. In the event, where the reimbursing bank chooses not to amend its undertaking to reflect the amendment as proposed by the issuing bank, then the reimbursing bank must inform about its decision to the issuing bank without delay. Here, it is important to understand that the decision not to amend the reimbursement undertaking does not cancel or nullify the original reimbursement undertaking of the reimbursing bank to the claiming bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(h)(iii) of URR 725 deals with the issuance of irrevocable reimbursement authorization amendment. The article states that once the amendment has been advised the issuing bank is irrevocable bound as of the time of its advice and enforceable. Therefore, receipt of the amendment advice by the reimbursing bank is not the point at which the issuing bank becomes bound; the issuing bank is bound the moment the irrevocable reimbursement authorization amendment is issued or advised.",
+          },
+          {
+            type: "paragraph",
+            text: "Further, Article 9(h)(iv) of URR 725 reaffirms that the original reimbursement authorization remains in force till the time the reimbursing bank communicates its acceptance of the amendment to the issuing bank. From the perspective of reimbursing bank this position ensure that the reimbursing bank is not bound by an amendment until it has communicated its acceptance. At an operational level, the communication of acceptance allows time for the reimbursing bank to review the amendment as per operational, regulatory and banking guidelines to which they are subjected to.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 9(h)(v) of URR 725 states that reimbursing bank must communicate its acceptance or rejection of an irrevocable reimbursement authorization amendment to the issuing bank. Therefore, the consent required is explicit and operationally, the communication of the consent suggest that the reimbursing bank has reviewed the implications from regulatory and legal perspective.",
+          },
+          {
+            type: "paragraph",
+            text: "Further, Article 9(h)(v) of URR 725 deals with the interplay of amendment of the reimbursement authorization and amendment of reimbursement undertaking.",
+          },
+          {
+            type: "paragraph",
+            text: "On receipt of advise of amendment of the reimbursement authorization, the reimbursing bank will first seek to amend the reimbursement undertaking. This requires the reimbursing bank to obtain the claiming bank’s acceptance or rejection of the undertaking amendment under Article 9(i)(iv) of URR 725.",
+          },
+          {
+            type: "paragraph",
+            text: "Based on that approval or rejection, will the reimbursing bank communicate acceptance / rejection of the reimbursement authorization amendment.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally, such a sequenced response is envisaged through Article 9(h)(v) of URR 725 and helps in maintaining reimbursement authorization and reimbursement undertaking at identical terms.",
+          },
+        ],
+      },
+      {
+        heading: "(Part 30 / 30) UCP 600 Default Reimbursement Framework: Authorization and Expiry",
+        blocks: [
+          {
+            type: "paragraph",
+            text: "Article 13(b) of the UCP 600 starts with the words If a credit does not state that reimbursement is subject to the ICC rules for bank to bank reimbursements, this implies that Field 40E of SWIFT MT 700 will record UCP latest version or UCP 600. Hence, bank to bank reimbursement agreement is subject to Article 13(b) and (c) of UCP 600.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(b)(i) of UCP 600 states that the issuing bank must provide a reimbursing bank with a reimbursement authorization that conforms with the availability stated in the credit.  Through Article 13(b)(i) of UCP 600 the issuing bank requests a third party bank to act on its instructions and pay claiming bank. The first stipulation recorded through Article 13(b)(i) of UCP 600 is the reimbursement authorization must conform with the availability as defined in Field 41a of SWIFT MT 700.",
+          },
+          {
+            type: "paragraph",
+            text: "The second stipulation states that the reimbursement authorization should not be subject to an expiry date. The operational objective behind an open dated authorization is to accommodate the possibility of latest shipment date being amended, resulting in subsequent changes in the expiry of reimbursement authorization leading to operational chaos. Hence, an open dated authorization leads to fewer amendments and easier compliance.",
+          },
+          {
+            type: "paragraph",
+            text: "Operationally, if the reimbursement authorization does include an expiry date, then in such circumstances, the reimbursing bank acting as an intermediary cannot act beyond the instructions provided by the issuing bank. Hence, the reimbursing bank may, at its discretion decline to act on the reimbursement authorization or having accepted the request refuse to honour claim after the expiry date.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(b)(ii) of UCP 600 states that the issuing bank is prohibited from incorporating any conditions that would require the reimbursing bank to provide a certificate of compliance with the terms and conditions of the credit. Insistence on such a certificate would be inconsistent with the role of reimbursing bank which is acting as an intermediary or on behalf of the issuing bank and not as a party to the documentary credit.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(b)(iii) of UCP 600 states that an issuing bank will be responsible for any loss of interest and expenses incurred in delay of delay of reimbursement by the reimbursement bank. The rationale behind the issuing banks liability is that reimbursing bank is acting on behalf of the issuing bank and not on its own capacity.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(b)(iii) of UCP 600 uses the term “first demand”. First demand in reference to bank to bank reimbursements can be understood reimbursement be provided on immediate basis or without delay. Understanding the meaning of the terms “on immediate basis” or “without delay” through Article 11(a)(i) of URR 725 which stipulates a period of three banking days for the reimbursing bank to examine the claim, check for compliance with the reimbursement authorization and effecting reimbursement to the claiming bank within the timeframe of three banking days.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(b)(iv) of UCP 600 lays down the default rule that all reimbursing bank’s charges are on the account of the issuing bank. The rationale reiterated through this rule is the reimbursing bank acts as an intermediary on behalf of the issuing bank. However, there is an exception to this rule, in cases where the charges are on the account of the beneficiary, then the issuing bank must record this both in the credit and reimbursement authorization.",
+          },
+          {
+            type: "paragraph",
+            text: "The purpose of recording such an exception in both the credit and reimbursement authorization is that the beneficiary is aware that the funds remitted will be deducted on the charges and that it is the responsibility of the reimbursing bank to collect such charges from the beneficiary.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(b)(iv) of UCP 600 also addresses the situation where no reimbursement is made and therefore the charges payable to the reimbursing bank are on the account of the issuing bank.",
+          },
+          {
+            type: "paragraph",
+            text: "Article 13(c) of UCP 600 states that the issuing bank is ultimately liable to provide reimbursement in cases where the reimbursing bank fails to reimburse the claiming bank due to any circumstances. The essence of Article 13(c) of UCP 600 is that irrespective of bank to bank reimbursement being subject to Article 13(b) or URR 725, Article 13(c) of UCP 600 remains applicable.",
+          },
+        ],
+      },
+    ],
+    relatedSlugs: [],
+    references: [],
+  },
 ];
 
 export const findArticle = (slug) => articles.find((a) => a.slug === slug);

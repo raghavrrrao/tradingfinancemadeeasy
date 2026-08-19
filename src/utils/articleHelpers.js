@@ -16,7 +16,6 @@ import { findCategory } from "../data/categories";
  * Priority:
  * 1. Same category
  * 2. Articles already linked in relatedSlugs
- * 3. Other articles
  * 
  * @param {Object} article - Article object
  * @param {number} limit - Max number of related articles to return
@@ -43,14 +42,6 @@ export function getAutoRelatedArticles(article, limit = 3) {
            !related.has(a)
     );
     sameCategory.slice(0, limit - related.size).forEach(a => related.add(a));
-  }
-
-  // Priority 3: Any other articles
-  if (related.size < limit) {
-    getPublishedArticles()
-      .filter(a => a.slug !== article.slug && !related.has(a))
-      .slice(0, limit - related.size)
-      .forEach(a => related.add(a));
   }
 
   return Array.from(related);
