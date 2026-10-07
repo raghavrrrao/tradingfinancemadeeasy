@@ -12,6 +12,14 @@ import { findPublishedArticle, getPublishedArticles } from "../data/articles";
 import { findCategory } from "../data/categories";
 
 /**
+ * Remove inline **bold** markers so block text reads as plain prose
+ *
+ * @param {string} text - Block text
+ * @returns {string} Text without markers
+ */
+export const stripInlineMarks = (text) => text.replace(/\*\*/g, "");
+
+/**
  * Generate related articles automatically
  * Priority:
  * 1. Same category
@@ -87,9 +95,9 @@ export function getArticleSearchText(article) {
   (article.sections || []).forEach(section => {
     parts.push(section.heading);
     (section.blocks || []).forEach(block => {
-      if (block.text) parts.push(block.text);
+      if (block.text) parts.push(stripInlineMarks(block.text));
       if (block.title) parts.push(block.title);
-      if (block.items) parts.push(block.items.join(" "));
+      if (block.items) parts.push(stripInlineMarks(block.items.join(" ")));
       if (block.headers) parts.push(block.headers.join(" "));
       if (block.rows) parts.push(block.rows.flat().join(" "));
     });

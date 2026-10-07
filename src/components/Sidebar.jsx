@@ -50,14 +50,14 @@ export default function Sidebar({ onNavigate }) {
                 />
               </button>
               {isExpanded && (
-                <ul className="ml-4 mb-2 mt-1 max-h-[520px] space-y-0.5 overflow-hidden border-l hairline pl-3 transition-all duration-200">
+                <ul className="ml-4 mb-2 mt-1 space-y-0.5 border-l hairline pl-3">
                   {categoryArticles.map((article) => (
                     <li key={article.slug}>
                       <NavLink
                         to={`/study-material/${cat.slug}/${article.slug}`}
                         onClick={onNavigate}
                         className={({ isActive }) =>
-                          `block rounded-md px-2 py-1.5 transition-colors focus-ring ${
+                          `block wrap-break-word rounded-md px-2 py-1.5 transition-colors focus-ring ${
                             isActive
                               ? "bg-verdigris/8 font-medium text-verdigris"
                               : "text-ink-soft hover:text-ink"

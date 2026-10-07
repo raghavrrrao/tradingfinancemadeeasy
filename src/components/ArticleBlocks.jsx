@@ -1,5 +1,11 @@
 import Icon from "./Icon";
 
+// Renders **bold** spans in block text; text without markers renders unchanged.
+const renderInline = (text) =>
+  text.split(/\*\*(.+?)\*\*/).map((part, i) =>
+    i % 2 ? <strong key={i} className="font-semibold text-ink">{part}</strong> : part
+  );
+
 export default function ArticleBlocks({ blocks }) {
   return (
     <>
@@ -8,7 +14,7 @@ export default function ArticleBlocks({ blocks }) {
           case "paragraph":
             return (
               <p key={i} className="article-copy mb-5 text-[16px] leading-8 text-ink-soft">
-                {block.text}
+                {renderInline(block.text)}
               </p>
             );
           case "list":
@@ -17,7 +23,7 @@ export default function ArticleBlocks({ blocks }) {
                 {block.items.map((item, j) => (
                   <li key={j} className="flex gap-3 rounded-md border border-rule-soft/70 bg-paper-raised/60 px-3 py-2.5 text-[15px] leading-7 text-ink-soft">
                     <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brass" />
-                    <span>{item}</span>
+                    <span>{renderInline(item)}</span>
                   </li>
                 ))}
               </ul>
@@ -29,7 +35,7 @@ export default function ArticleBlocks({ blocks }) {
                   <Icon name="compass" className="h-3.5 w-3.5" />
                   {block.title || "Note"}
                 </p>
-                <p className="text-sm leading-7 text-ink-soft">{block.text}</p>
+                <p className="text-sm leading-7 text-ink-soft">{renderInline(block.text)}</p>
               </div>
             );
           case "tip":
@@ -39,7 +45,7 @@ export default function ArticleBlocks({ blocks }) {
                   <Icon name="target" className="h-3.5 w-3.5" />
                   {block.title || "Tip"}
                 </p>
-                <p className="text-sm leading-7 text-ink-soft">{block.text}</p>
+                <p className="text-sm leading-7 text-ink-soft">{renderInline(block.text)}</p>
               </div>
             );
           case "table":

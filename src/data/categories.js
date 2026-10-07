@@ -10,6 +10,10 @@ export const categoryMetadata = [
       "The ICC's standard trade terms defining buyer and seller obligations for delivery, risk, and cost.",
     icon: "anchor",
   },
+  {
+    slug: "ucp-600",
+    title: "UCP 600",
+  },
 ];
 
 const titleFromSlug = (slug) =>
@@ -43,9 +47,17 @@ const buildCategory = (slug) => {
   };
 };
 
+// Display order for categories; unlisted categories follow in articles.js order.
+const categoryOrder = ["incoterms", "documentary-credits", "ucp-600"];
+
+const categoryRank = (slug) => {
+  const index = categoryOrder.indexOf(slug);
+  return index === -1 ? categoryOrder.length : index;
+};
+
 export const getCategoriesWithArticles = () => {
   const slugs = [...new Set(getPublishedArticles().map((article) => article.categorySlug).filter(Boolean))];
-  return slugs.map(buildCategory);
+  return slugs.sort((a, b) => categoryRank(a) - categoryRank(b)).map(buildCategory);
 };
 
 export const categories = getCategoriesWithArticles();

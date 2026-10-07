@@ -2,7 +2,7 @@ import { useMemo, useRef, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Icon from "./Icon";
 import { findCategory, getCategoriesWithArticles } from "../data/categories";
-import { getArticleSearchText } from "../utils/articleHelpers";
+import { getArticleSearchText, stripInlineMarks } from "../utils/articleHelpers";
 import { getPublishedArticles } from "../data/articles";
 
 const normalize = (value) => value.toLowerCase();
@@ -14,10 +14,10 @@ function getSnippet(article, query) {
 
   const paragraph = article.sections
     ?.flatMap((s) => s.blocks || [])
-    .find((block) => normalize(block.text || block.items?.join(" ") || "").includes(q));
+    .find((block) => normalize(stripInlineMarks(block.text || block.items?.join(" ") || "")).includes(q));
 
-  if (paragraph?.text) return paragraph.text.slice(0, 96);
-  if (paragraph?.items) return paragraph.items[0]?.slice(0, 96);
+  if (paragraph?.text) return stripInlineMarks(paragraph.text).slice(0, 96);
+  if (paragraph?.items) return stripInlineMarks(paragraph.items[0] || "").slice(0, 96);
   return article.summary;
 }
 

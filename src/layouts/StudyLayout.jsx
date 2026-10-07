@@ -19,7 +19,7 @@ export default function StudyLayout() {
 
       <div className="lg:grid lg:grid-cols-[280px_minmax(0,1fr)] lg:gap-8 xl:gap-10">
         <aside className={`${mobileOpen ? "block" : "hidden"} lg:block mb-8 lg:mb-0`}>
-          <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto lg:pr-2">
+          <div className="lg:sticky lg:top-24 lg:max-h-[calc(100vh-7rem)] lg:overflow-y-auto lg:overflow-x-hidden lg:overscroll-contain lg:pr-2">
             <Sidebar onNavigate={() => setMobileOpen(false)} />
           </div>
         </aside>
